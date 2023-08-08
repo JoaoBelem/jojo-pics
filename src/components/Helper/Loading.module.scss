@@ -1,0 +1,20 @@
+.box{
+  display: flex;
+  padding: 4rem 0;
+  justify-content: center;
+}
+
+.load{
+  border-radius: 50%;
+  border: .6rem solid #ccc;
+  width: 4rem;
+  height: 4rem;
+  border-top-color: rgb(13, 194, 194);
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading{
+  to{
+    transform: rotate(360deg);
+  }
+}
