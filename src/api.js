@@ -1,4 +1,4 @@
-const url = 'http://localhost:8080';
+const url = 'https://jojo-pics.onrender.com';
 
 export function PHOTO_POST(data) {
   return {
@@ -7,17 +7,17 @@ export function PHOTO_POST(data) {
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
-        Accept: 'application/json'
+        Accept: 'application/json',
       },
       method: 'POST',
       body: JSON.stringify(data),
-      crossDomain: true
+      crossDomain: true,
     },
   };
 }
 
 export function PHOTO_GET() {
   return {
-    url: url + '/photos'
+    url: url + '/photos',
   };
 }
